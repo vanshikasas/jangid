@@ -1,0 +1,17 @@
+{
+  "name": "SKJA",
+  "private": true,
+  "version": "0.2.0",
+  "scripts": {
+    "up": "docker compose up --build",
+    "down": "docker compose down --remove-orphans",
+    "logs": "docker compose logs -f",
+    "dev": "npm run up",
+    "dev:down": "npm run down",
+    "dev:logs": "npm run logs",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "cargo run --manifest-path backend/Cargo.toml",
+    "build": "npm run build --prefix frontend && cargo build --manifest-path backend/Cargo.toml --release",
+    "start": "cargo run --manifest-path backend/Cargo.toml --release"
+  }
+}

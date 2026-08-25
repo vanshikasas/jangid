@@ -1,0 +1,17 @@
+.git
+.gitignore
+
+node_modules
+frontend/node_modules
+app/frontend/node_modules
+
+frontend/.angular
+backend/target
+frontend/dist
+app/frontend/dist
+dist
+
+.env
+.env.local
+backend/.env
+frontend/.env

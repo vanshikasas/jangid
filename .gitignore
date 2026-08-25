@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+app/frontend/node_modules/
+
+# Build output
+dist/
+frontend/dist/
+app/frontend/dist/
+backend/target/
+
+# Local environment and secrets
+.env
+.env.local
+backend/.env
+frontend/.env
+app/backend/.env
+app/frontend/.env
+
+# Logs and temporary run files
+*.log
+run.log
+cookie.txt
+session.txt
+login-response.json
+tmp-auth-login.json
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
